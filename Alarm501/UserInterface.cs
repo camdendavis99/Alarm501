@@ -150,10 +150,7 @@ namespace Alarm501
                 alarm.Trigger();
                 this.Invoke(new Action(() => { UpdateSnoozeStopButtons(); }));
             }
-<<<<<<< HEAD
             MessageBox.Show("Alarm went off");
-=======
->>>>>>> ac7ce5f... Fixed stopping and snoozing alarms
         }
 
         private void UpdateSnoozeStopButtons()

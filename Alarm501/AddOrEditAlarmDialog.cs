@@ -10,11 +10,15 @@ using System.Windows.Forms;
 
 namespace Alarm501
 {
-    public partial class Form1 : Form
+    public partial class AddOrEditAlarmDialog : Form
     {
-        public Form1()
+        public AddOrEditAlarmDialog()
         {
             InitializeComponent();
+            uxTimePicker.Value = DateTime.Now;
         }
+
+        public DateTime Time => uxTimePicker.Value;
+        public bool On => uxOnButton.Checked;
     }
 }
